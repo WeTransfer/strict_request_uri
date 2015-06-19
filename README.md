@@ -25,6 +25,9 @@ cannot be decoded, an error page will be rendered instead.
       [400, {'Content-Type' => 'text/plain'}, ['This is a no go mate']]
     end
 
+Note that `PATH_INFO` and `QUERY_STRING` variables in Rack env are going to be replaced
+with something harmless (because they get used to render self-URLs and so on).
+
 You can also use it in your Rails middleware stack, and render a controller in return
 
     Rails.application.config.middleware.insert_after 'Warden::Manager', StrictRequestUri do | env |
