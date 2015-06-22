@@ -1,5 +1,7 @@
 # strict_request_uri
 
+![Nasty URL](images/strict_uri_.png)
+
 Reject requests with an invalid REQUEST_URI at the gate.
 Some HTTP clients will happily append raw junk bytes to your URL before doing a request. Others
 will first append junk, and then URL-encode it.
