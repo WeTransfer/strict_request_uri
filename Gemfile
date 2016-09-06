@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'rack'
+gem 'rack', '~> 1'
 
 group :development do
   gem 'gemfury'
