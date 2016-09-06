@@ -3,6 +3,7 @@ source "http://rubygems.org"
 gem 'rack'
 
 group :development do
+  gem 'gemfury'
   gem "rspec", "~> 3.0"
   gem "rdoc", "~> 3.12"
   gem "bundler", "~> 1.0"
