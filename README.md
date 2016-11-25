@@ -51,6 +51,6 @@ You can also use it in your Rails middleware stack, and render a controller in r
 
 ## Copyright
 
-Copyright (c) 2015 Julik Tarkhanov. See LICENSE.txt for
+Copyright (c) 2016 WeTransfer. See LICENSE.txt for
 further details.
 

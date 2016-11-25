@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
   s.authors = ["Julik Tarkhanov"]
-  s.date = "2016-09-06"
+  s.date = "2016-11-25"
   s.description = "Reject Rack requests with an invalid URL"
   s.email = "me@julik.nl"
   s.extra_rdoc_files = [
@@ -20,8 +20,8 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     ".document",
-    ".gitlab-ci.yml",
     ".rspec",
+    ".travis.yml",
     "Gemfile",
     "LICENSE.txt",
     "README.md",
@@ -34,8 +34,8 @@ Gem::Specification.new do |s|
     "strict_request_uri.gemspec"
   ]
   s.homepage = "https://gitlab.wetransfer.net/julik/strict_request_uri"
-  s.licenses = ["Proprietary"]
-  s.rubygems_version = "2.5.1"
+  s.licenses = ["MIT"]
+  s.rubygems_version = "2.4.5.1"
   s.summary = "and show an error page instead"
 
   if s.respond_to? :specification_version then
@@ -47,7 +47,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rspec>, ["~> 3.0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 2.0.1"])
+      s.add_development_dependency(%q<jeweler>, ["~> 2.2.1"])
       s.add_development_dependency(%q<simplecov>, [">= 0"])
     else
       s.add_dependency(%q<rack>, ["~> 1"])
@@ -55,7 +55,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rspec>, ["~> 3.0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.0"])
-      s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
+      s.add_dependency(%q<jeweler>, ["~> 2.2.1"])
       s.add_dependency(%q<simplecov>, [">= 0"])
     end
   else
@@ -64,7 +64,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<rspec>, ["~> 3.0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.0"])
-    s.add_dependency(%q<jeweler>, ["~> 2.0.1"])
+    s.add_dependency(%q<jeweler>, ["~> 2.2.1"])
     s.add_dependency(%q<simplecov>, [">= 0"])
   end
 end
