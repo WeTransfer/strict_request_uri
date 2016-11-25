@@ -50,7 +50,6 @@ describe StrictRequestUri do
     end
   
     it 'with junk after the path calls the error app instead' do
-      # The related bug ticket - https://www.assembla.com/spaces/wetransfer-2-0/tickets/1568
       script_name = 'myscript'
       valid_part = '/items/457'
       invalid_part = [107, 17, 52, 140].pack("C*")
@@ -97,7 +96,6 @@ describe StrictRequestUri do
     end
 
     it 'after the query string calls the error app instead' do
-      # The related bug ticket - https://www.assembla.com/spaces/wetransfer-2-0/tickets/1568
       script_name = 'myscript'
       valid_path_info = '/items/457'
       query_string = 'foo=bar&baz=bad'
