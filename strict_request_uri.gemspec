@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
     "spec/strict_request_uri_spec.rb",
     "strict_request_uri.gemspec"
   ]
-  s.homepage = "https://gitlab.wetransfer.net/julik/strict_request_uri"
+  s.homepage = "https://github.com/WeTransfer/strict_request_uri"
   s.licenses = ["MIT"]
   s.rubygems_version = "2.4.5.1"
   s.summary = "and show an error page instead"

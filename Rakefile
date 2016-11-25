@@ -17,7 +17,7 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.version = StrictRequestUri::VERSION
   gem.name = "strict_request_uri"
-  gem.homepage = "https://gitlab.wetransfer.net/julik/strict_request_uri"
+  gem.homepage = "https://github.com/WeTransfer/strict_request_uri"
   gem.license = "MIT"
   gem.description = %Q{Reject Rack requests with an invalid URL}
   gem.summary = %Q{and show an error page instead}
