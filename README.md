@@ -1,5 +1,7 @@
 # strict_request_uri
 
+[![Build Status](https://travis-ci.org/WeTransfer/strict_request_uri.svg?branch=master)](https://travis-ci.org/WeTransfer/strict_request_uri)
+
 ![Nasty URL](images/strict_uri.png)
 
 Reject requests with an invalid REQUEST_URI at the gate.
