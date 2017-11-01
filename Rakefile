@@ -25,7 +25,7 @@ Jeweler::Tasks.new do |gem|
   gem.authors = ["Julik Tarkhanov"]
   # dependencies defined in Gemfile
 end
-# Jeweler::RubygemsDotOrgTasks.new
+Jeweler::RubygemsDotOrgTasks.new
 
 require 'rspec/core'
 require 'rspec/core/rake_task'
@@ -50,20 +50,3 @@ Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
-
-namespace :fury do
-  desc "Pick up the .gem file from pkg/ and push it to Gemfury"
-  task :release do
-    # IMPORTANT: You need to have the `fury` gem installed, and you need to be logged in.
-    # Please DO READ about "impersonation", which is how you push to your company account instead
-    # of your personal account!
-    # https://gemfury.com/help/collaboration#impersonation
-    paths = Dir.glob(__dir__ + '/pkg/*.gem')
-    if paths.length != 1
-      raise "Must have found only 1 .gem path, but found %s" % paths.inspect
-    end
-    escaped_gem_path = Shellwords.escape(paths.shift)
-    `fury push #{escaped_gem_path} --as=wetransfer`
-  end
-end
-task :release => [:clean, 'gemspec:generate', 'git:release', :build, 'fury:release']
