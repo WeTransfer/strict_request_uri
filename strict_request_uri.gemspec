@@ -1,8 +1,12 @@
 # coding: utf-8
 
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'strict_request_uri/version'
+
 Gem::Specification.new do |s|
   s.name = "strict_request_uri"
-  s.version = "1.0.2"
+  s.version = StrictRequestUri::VERSION
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib"]
