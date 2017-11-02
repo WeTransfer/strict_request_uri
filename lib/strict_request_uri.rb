@@ -1,4 +1,5 @@
 require 'rack'
+require_relative 'strict_request_uri/version'
 
 # Sometimes junk gets appended to the URLs clicked in e-mails.
 # This junk then gets sent by browsers undecoded, and causes Unicode-related
@@ -10,8 +11,6 @@ require 'rack'
 # welcome. This also allows us to tell the users that they are using a URL which is in fact
 # not really valid.
 class StrictRequestUri
-  VERSION = '1.0.2'
-  
   # Inits the middleware. The optional proc should be a Rack application that 
   # will render the error page. To make a controller render that page,
   # use <ControllerClass>.action()
