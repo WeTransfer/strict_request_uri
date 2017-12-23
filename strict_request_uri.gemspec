@@ -40,7 +40,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency 'rack'
   s.add_development_dependency 'rake', '~> 12'
   s.add_development_dependency 'rspec', '~> 3'
-  s.add_development_dependency 'rdoc', '~> 3'
+  s.add_development_dependency 'rdoc', '~> 6'
   s.add_development_dependency 'bundler', '~> 1'
   s.add_development_dependency 'simplecov', '>= 0'
 end
