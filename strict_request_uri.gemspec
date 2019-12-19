@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
   s.summary = "and show an error page instead"
 
   s.specification_version = 4
-  s.add_runtime_dependency 'rack'
+  s.add_runtime_dependency 'rack', '2.0.8'
   s.add_development_dependency 'rake', '~> 13'
   s.add_development_dependency 'rspec', '~> 3'
   s.add_development_dependency 'rdoc', '~> 6'
