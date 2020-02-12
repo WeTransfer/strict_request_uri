@@ -41,6 +41,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '~> 13'
   s.add_development_dependency 'rspec', '~> 3'
   s.add_development_dependency 'rdoc', '~> 6'
-  s.add_development_dependency 'bundler', '~> 1'
+  s.add_development_dependency 'bundler'
   s.add_development_dependency 'simplecov', '>= 0'
 end
