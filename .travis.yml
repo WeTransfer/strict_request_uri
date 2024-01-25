@@ -1,6 +1,0 @@
-rvm:
-- 2.3.0
-- 2.7.0
-sudo: false
-cache: bundler
-script: bundle exec rspec
